@@ -1,18 +1,18 @@
 %define		_state		stable
 %define		orgname		svgpart
-%define		qtver		4.7.3
+%define		qtver		4.7.4
 
 Summary:	K Desktop Environment - svgpart
 Name:		svgpart
-Version:	4.7.0
+Version:	4.7.1
 Release:	1
 License:	GPL
 Group:		X11/Applications/Graphics
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.bz2
-# Source0-md5:	64e10ccf126668a4fb3af337bd547a13
+# Source0-md5:	1bffaac4d9c6c9f1d04377621dff224d
 URL:		http://www.kde.org/
-BuildRequires:	kde4-kdelibs-devel
-Obsoletes:	kde4-kdegraphics-svgpart
+BuildRequires:	kde4-kdelibs-devel >= %{version}
+Obsoletes:	kde4-kdegraphics-svgpart < 4.6.99
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -37,9 +37,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
-
-%post -p /sbin/ldconfig
-%postun -p /sbin/ldconfig
 
 %files
 %defattr(644,root,root,755)
