@@ -1,15 +1,15 @@
 %define		_state		stable
 %define		orgname		svgpart
-%define		qtver		4.8.0
+%define		qtver		4.8.1
 
 Summary:	K Desktop Environment - svgpart
 Name:		kde4-svgpart
-Version:	4.8.2
+Version:	4.8.3
 Release:	1
 License:	GPL
 Group:		X11/Applications/Graphics
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
-# Source0-md5:	1c44b0fc9fc75df18aab9e951c929271
+# Source0-md5:	b5731be2f089faa608bdf6f678d02a66
 URL:		http://www.kde.org/
 BuildRequires:	kde4-kdelibs-devel >= %{version}
 Obsoletes:	kde4-kdegraphics-svgpart < 4.6.99
