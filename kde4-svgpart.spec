@@ -4,12 +4,12 @@
 
 Summary:	K Desktop Environment - svgpart
 Name:		kde4-svgpart
-Version:	4.10.5
+Version:	4.11.3
 Release:	1
 License:	GPL
 Group:		X11/Applications/Graphics
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
-# Source0-md5:	e82c494e05d0928fbaef7e3c8e4a1a44
+# Source0-md5:	8f2f000322b13db839fef9ee71e2962d
 URL:		http://www.kde.org/
 BuildRequires:	kde4-kdelibs-devel >= %{version}
 Obsoletes:	kde4-kdegraphics-svgpart < 4.6.99
